@@ -60,6 +60,14 @@
         height: 100%;
     }
 
+    .schedule-table {
+        table-layout: fixed;
+    }
+    .schedule-table td:first-child {
+        width: 170px;
+        white-space: nowrap;
+    }
+
     </style>
 
 
@@ -96,7 +104,10 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav mr-auto align-items-end">
                             <li class="nav-item">
-                              <a class="nav-link" href="#Schedule" style="padding-left: 0px">Schedule</a>
+                              <a class="nav-link" href="#Report" style="padding-left: 0px">Report</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#Schedule">Schedule</a>
                             </li>
                             <!-- <li class="nav-item">
                               <a class="nav-link" href="#Attendees">Attendees</a>
@@ -131,13 +142,23 @@
 
         <hr>
 
-        <h3 id="Schedule">Tentative Schedule</h3>
+        <h3 id="Report">Report</h3>
+        <p class="text-justify">
+            The workshop report, <em>Long-term Research Directions in Wired Networking</em>, is here:
+            <a href="assets/report/wired23-workshop-report.pdf">Workshop Report (PDF)</a>.
+            <br>
+            Slides from the keynote and from each session are linked in the schedule below.
+        </p>
+
+        <hr>
+
+        <h3 id="Schedule">Schedule</h3>
         <!-- <div class="row py-lg-5 text-center">
             <h2 class="fw-light"><strong>September 15th, 2023</strong></h2>
           </div> -->
         <h5 class="sub-heading">Day 1: Friday, September 15th, 2023</h5>
     
-          <table class="table table-hover">
+          <table class="table table-hover schedule-table">
             <tbody>
               <tr>
                 <td scope="col">
@@ -162,7 +183,7 @@
                   9:30am - 10:30am
                 </td>
                 <td scope="col" style="max-width: 600px">
-                  Keynote: Dave Maltz, Technical Fellow and Corporate Vice President, Azure Networking
+                  Keynote: Dave Maltz, Technical Fellow and Corporate Vice President, Azure Networking<br><a href="assets/slides/maltz-keynote.pdf">[slides]</a>
                 </td>
               </tr>
     
@@ -180,7 +201,7 @@
                   11:00am - 12:30pm
                 </td>
                 <td scope="col">
-                Session Topic: Pondering the Public Internet
+                Session Topic: Pondering the Public Internet<br><a href="assets/slides/shenker-pondering-the-public-internet.pdf">[slides]</a><br><a href="assets/text/public-Internet.pdf">[long-form text: public Internet]</a> <a href="assets/text/Internet-survivability.pdf">[long-form text: Internet survivability]</a> <a href="assets/text/measurements.pdf">[long-form text: measurements]</a>
                 </td>
               </tr>
     
@@ -217,7 +238,7 @@
                   2:30pm - 4:00pm
                 </td>
                 <td scope="col">
-                Session Topic: Network Hardware
+                Session Topic: Network Hardware<br><a href="assets/slides/ghobadi-network-hardware.pdf">[slides]</a>
     
                 </td>
               </tr>
@@ -236,7 +257,7 @@
                   4:30pm - 6:00pm
                 </td>
                 <td scope="col">
-                Session Topic: Application-driven Networking
+                Session Topic: Application-driven Networking<br><a href="assets/slides/bustamante-application-driven-networking.pdf">[slides]</a><br><a href="assets/text/application-driven-networking.pdf">[long-form text: application-driven networking]</a>
                 </td>
               </tr>
     
@@ -254,7 +275,7 @@
     
           <h5 class="sub-heading">Day 2: Saturday, September 16th, 2023</h5>
     
-          <table class="table table-hover">
+          <table class="table table-hover schedule-table">
             <tbody>
               <tr>
                 <td scope="col">
@@ -270,7 +291,7 @@
                   9:00am - 10:00am
                 </td>
                 <td scope="col">
-                  Session Topic: Network and Operating Systems
+                  Session Topic: Network and Operating Systems<br><a href="assets/slides/network-and-operating-systems.pdf">[slides]</a>
                 </td>
               </tr>
     
@@ -288,7 +309,7 @@
                   10:15am - 11:15am
                 </td>
                 <td scope="col">
-                Session Topic: Network Theory
+                Session Topic: Network Theory<br><a href="assets/slides/godfrey-network-theory.pdf">[slides]</a>
                 </td>
               </tr>
     
@@ -306,7 +327,7 @@
                   11:30am - 12:30pm
                 </td>
                 <td scope="col">
-                Session Topic: PL techniques for networking
+                Session Topic: PL techniques for networking<br><a href="assets/slides/mahajan-pl-techniques-for-networking.pdf">[slides]</a><br><a href="assets/text/formal-methods.pdf">[long-form text: formal methods]</a>
                 </td>
               </tr>
     
@@ -341,15 +362,65 @@
 
         <hr>
 
-        <!-- <h3 id="Attendees">List of Attendees</h3>
+        <h3 id="Attendees">Attendees</h3>
+
+        <h5 class="sub-heading">Organizers</h5>
         <p class="text-justify">
-            Rachit Agarwal, Cornell (Organizer)<br>
-            Arvind Krishnamurthy, University of Washington (Organizer)<br>
-            XYZ, ABC<br>
-            XYZ, ABC<br>
-            XYZ, ABC<br>
+            Rachit Agarwal, Cornell University<br>
+            Arvind Krishnamurthy, University of Washington<br>
         </p>
-        <hr> -->
+
+        <h5 class="sub-heading">Participants</h5>
+        <p class="text-justify">
+            Aditya Akella, UT Austin<br>
+            Fabi&aacute;n Bustamante, Northwestern<br>
+            Manya Ghobadi, MIT<br>
+            P. Brighten Godfrey, UIUC<br>
+            Srikanth Kandula, Microsoft Research<br>
+            Ethan Katz-Bassett, Columbia<br>
+            Samira Khan, University of Virginia / Google<br>
+            Ming Liu, University of Wisconsin<br>
+            Ratul Mahajan, University of Washington<br>
+            David Maltz, Microsoft Azure<br>
+            Radhika Mittal, UIUC<br>
+            Lai Yi Ohlsen, Measurement Lab<br>
+            Aurojit Panda, NYU<br>
+            KK Ramakrishnan, UC Riverside<br>
+            Vyas Sekar, CMU<br>
+            Scott Shenker, UC Berkeley<br>
+            Akshitha Sriraman, CMU<br>
+            Katherine Townsend, Measurement Lab<br>
+            David Walker, Princeton<br>
+            Anduo Wang, Temple University<br>
+            Walter Willinger, NIKSUN<br>
+            Keith Winstein, Stanford<br>
+            Richard Yang, Yale<br>
+            Minlan Yu, Harvard<br>
+            Pamela Zave, Princeton<br>
+        </p>
+
+        <h5 class="sub-heading">NSF program staff</h5>
+        <p class="text-justify">
+            Darleen Fisher<br>
+            Joseph Lyles<br>
+            Ann Von Lehmen<br>
+            Ellen Zegura<br>
+        </p>
+
+        <h5 class="sub-heading">Rapporteurs and support</h5>
+        <p class="text-justify">
+            Saksham Agarwal, Cornell University (rapporteur)<br>
+            Qizhe Cai, Cornell University (rapporteur)<br>
+            Midhul Vuppalapati, Cornell University (rapporteur)<br>
+            Lizette DeJesus, Cornell University (event coordination)<br>
+        </p>
+
+        <p class="text-justify">
+            In addition, Antoine Kaufmann, Robert Kleinberg, Todd Millstein, and Vishal Shrivastav
+            also contributed to the pre-workshop discussions.
+        </p>
+
+        <hr>
 
         <h3 id="Logistics">Logistics</h3>
         <h5>Workshop venue</h5>
